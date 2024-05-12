@@ -64,5 +64,12 @@ const HeroSection = () => {
   </section>
   );
 };
+const func = () => {
+  return (
+    <div >
+       you&apos;re free
+      </div>
+  )}
+
 
 export default HeroSection
