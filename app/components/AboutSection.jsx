@@ -94,5 +94,11 @@ Join me on this journey of creativity and innovation. Let's make a difference to
     </section>
   )
 }
+const func = () => {
+  return (
+    <div >
+       you&apos;re free
+      </div>
+  )}
 
 export default AboutSection
