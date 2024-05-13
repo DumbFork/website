@@ -6,11 +6,11 @@ import ProjectTag from "./ProjectTag";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
+    title: "Next.js Portfolio Website",
+    description: "1st time learning website bulding was surely stressful",
     image: ("/images/projects/web.png"),
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/DumbFork/website.git",
     previewUrl: "/",
   },
   {
