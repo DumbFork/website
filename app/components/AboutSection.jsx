@@ -9,9 +9,9 @@ const TAB_DATA = [
         id: "skills",
         content: (
             <ul className='list-disc pl-2'>
-                <li>React</li>
+                <li>Next.js</li>
                 <li>PhotoShop</li>
-                <li>Microsoft Office</li>
+                <li>Ms Office</li>
                 <li>Team Leading</li>
                 <li>Communication</li>
                 <li>Customer Service</li>
@@ -35,8 +35,21 @@ const TAB_DATA = [
         content: (
 <ul className='list-disc pl-2'>
                     <li>+2 Graduate </li>
-                <li>Goethe Zentrum KTM</li>
+                <li>B1 Goethe Zentrum KTM</li>
                 <li>Old School of Tourism and Hospitality Management</li>
+            </ul>
+        )
+    },
+    {
+        title: "Profession Titles",
+        id: "profession titles",
+        content: (
+<ul className='list-disc pl-2'>
+                    <li>Bartender</li>
+                <li>Barista Trainer</li>
+                <li>Staff Manager</li>
+                <li>Store Officer</li>
+                <li>Assistant Accountant</li>
             </ul>
         )
     }
@@ -59,7 +72,7 @@ const AboutSection = () => {
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
     Welcome! to my Portfolio, I'm a multi professional individual. With a love for exploring new opportunities, I've dedicated myself to learning and collecting knowledge .
-    I am experienced in the field of hospitality, coustomer service, coding, bartending, barista trainer, graphic designer and more.
+    I am experienced in the field of hospitality, coustomer service, bartending, barista trainer, graphic designer, basic coding, and more.
 I excel in: Communication, Diverse Learning, Creativity and Teamwork. Driven by a commitment to find a career where I thrive and which brings me joy along with satisfaction. Beyond work, I enjoy travelling, sketching and music.
 Join me on this journey of creativity and innovation. Let's make a difference together!
     </p>
@@ -84,6 +97,13 @@ Join me on this journey of creativity and innovation. Let's make a difference to
             >
               {" "}
               Certifications{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("profession titles")}
+              active={tab === "profession titles"}
+            >
+              {" "}
+              Profession Titles{" "}
             </TabButton>
     </div>
     <div className='mt-8'>{TAB_DATA.find((t) => t.id === tab).content}

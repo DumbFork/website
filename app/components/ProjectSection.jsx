@@ -92,6 +92,11 @@ const ProjectsSection = () => {
           name="Mobile"
           isSelected={tag === "Mobile"}
         />
+         <ProjectTag
+          onClick={handleTagChange}
+          name="Other"
+          isSelected={tag === "Other"}
+        />
       </div>
       <div className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (

@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
+import Link from 'next/link';
 
 
 const HeroSection = () => {
@@ -34,18 +35,24 @@ const HeroSection = () => {
           </h1>
           <br></br>
         <span className="text-[#b3b3b3] text-base sm:text-lg mt-0 mb-6 lg:text-xl">
-        <p>Hey there! I am Pratik G.C., a versatile professional with experience as a Bartender, Barista trainer, Staff Manager, Accountant, and Sales officer.</p>
-
-       <br></br>
-        With expertise across multiple domains, I bring adaptability and a commitment to excellence to any team or organization. Let's connect and explore how I can contribute to your success!
+        <p>Hey there! I am Pratik G.C., a versatile professional with expertise across multiple domains, I bring adaptability and a commitment to excellence to any team or organization.</p>
+         Let's connect and explore how I can contribute to your success!
         </span>
         <div>
-          <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br  from-[#76E3D8] to-[#6f00ff] hover:bg-slate-800 text-white'>
-            Hire Me
-            </button>
-          <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#76E3D8] to-[#6f00ff] hover:bg-slate-800 text-white mt-3'>
-            <span className='block bg-[#001919] hover:bg-slate-800 rounded-full px-5 py-2'> Download CV</span>
-          </button>
+        <Link
+              href="/#contact"
+              className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br  from-[#76E3D8] to-[#6f00ff] hover:bg-slate-800 text-white'>
+              Hire Me
+            </Link>
+            <Link
+              href="/public/CV/CV24.PDF"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#76E3D8] to-[#6f00ff] hover:bg-slate-800 text-white mt-3"
+            >
+              <span className="block bg-[#001919] hover:bg-slate-800 rounded-full px-5 py-2">
+                Download CV
+              </span>
+            </Link>
+
         </div>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
