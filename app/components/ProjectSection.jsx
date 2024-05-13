@@ -10,7 +10,7 @@ const projectsData = [
     description: "1st time learning website bulding was surely stressful",
     image: ("/images/projects/web.png"),
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/DumbFork",
+    gitUrl: "https://github.com/DumbFork/website.git",
     previewUrl: "/",
   },
   {
