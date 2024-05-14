@@ -71,9 +71,9 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-    Welcome! to my Portfolio, I'm a multi professional individual. With a love for exploring new opportunities, I've dedicated myself to learning and collecting knowledge.</p>
+    Welcome! to my Portfolio, I'm a multi professional individual. With a love for exploring new opportunities.</p>
     <p className="text-base lg:text-lg">
-    I am experienced in the field of hospitality, customer service, bartending, barista trainer, graphic designer and basic coding.
+    I am experienced in the field of hospitality, store operation, customer service, bartending, barista trainer, graphic designer and basic coding.
 I excel in: Communication, Diverse Learning, Creativity and Teamwork.</p><p className="text-base lg:text-lg"> I am a quick learner and I am always
             looking to expand my knowledge and skill set. Beyond work, I enjoy travelling, sketching and music.</p><p className="text-base lg:text-lg">
 Join me on this journey of creativity and discovery!
