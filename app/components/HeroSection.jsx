@@ -34,14 +34,14 @@ const HeroSection = () => {
     />
           </h1>
           <br></br>
-        <span className="text-[#b3b3b3] text-base sm:text-lg mt-0 mb-6 lg:text-xl">
-        <p>Hey there! I am Pratik G.C., a versatile professional with expertise across multiple domains, I bring adaptability and a commitment to excellence to any team or organization.</p>
-         Let's connect and explore how I can contribute to your success!
-        </span>
+          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+        Hey there! I am Pratik G.C., a versatile professional with expertise across multiple domains, I bring adaptability and a commitment to excellence to any team or organization. </p>
+        <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl"> Let's connect and explore how I can contribute to your success!</p>
+       
         <div>
         <Link
               href="/#contact"
-              className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br  from-[#76E3D8] to-[#6f00ff] hover:bg-slate-800 text-white'>
+              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#76E3D8] to-[#6f00ff] hover:bg-slate-800 text-white">
               Hire Me
             </Link>
             <Link
@@ -56,7 +56,7 @@ const HeroSection = () => {
         </div>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-        <div className="rounded-full bg-[#001919] bg-opacity-80 w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative ">
+        <div className="rounded-full bg-[#001919] bg-opacity-800 w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative ">
           <Image
            src="/images/hero-image.png"
            alt="hero-image"

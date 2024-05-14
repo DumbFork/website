@@ -41,8 +41,8 @@ const TAB_DATA = [
         )
     },
     {
-        title: "Profession Titles",
-        id: "profession titles",
+        title: "Former",
+        id: "former",
         content: (
 <ul className='list-disc pl-2'>
                     <li>Bartender</li>
@@ -71,10 +71,12 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-    Welcome! to my Portfolio, I'm a multi professional individual. With a love for exploring new opportunities, I've dedicated myself to learning and collecting knowledge .
-    I am experienced in the field of hospitality, coustomer service, bartending, barista trainer, graphic designer, basic coding, and more.
-I excel in: Communication, Diverse Learning, Creativity and Teamwork. Driven by a commitment to find a career where I thrive and which brings me joy along with satisfaction. Beyond work, I enjoy travelling, sketching and music.
-Join me on this journey of creativity and innovation. Let's make a difference together!
+    Welcome! to my Portfolio, I'm a multi professional individual. With a love for exploring new opportunities, I've dedicated myself to learning and collecting knowledge.</p>
+    <p className="text-base lg:text-lg">
+    I am experienced in the field of hospitality, customer service, bartending, barista trainer, graphic designer and basic coding.
+I excel in: Communication, Diverse Learning, Creativity and Teamwork.</p><p className="text-base lg:text-lg"> I am a quick learner and I am always
+            looking to expand my knowledge and skill set. Beyond work, I enjoy travelling, sketching and music.</p><p className="text-base lg:text-lg">
+Join me on this journey of creativity and discovery!
     </p>
     <div className="flex flex-row justify-start mt-8">   
      <TabButton
@@ -99,11 +101,11 @@ Join me on this journey of creativity and innovation. Let's make a difference to
               Certifications{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("profession titles")}
-              active={tab === "profession titles"}
+              selectTab={() => handleTabChange("former")}
+              active={tab === "former"}
             >
               {" "}
-              Profession Titles{" "}
+              Former{" "}
             </TabButton>
     </div>
     <div className='mt-8'>{TAB_DATA.find((t) => t.id === tab).content}
