@@ -9,7 +9,7 @@ const EmailSection = () => {
         <p className='text-[#ADB7BE] mb-4 max-w-md'>
             {""}
             I'm currently looking for new opportunities, my inbox is always open.
-            Whether you have a question or jaust want to say hi, I'll try my best to get back to you! 
+            Whether you have a question or jaust want to say hi, I'll try my best to get back to you!<p> ##Website is still under development Pictures and Tiltles are Place holders##</p>
         </p>
         <div className='socials flex flex-row gap-2'>
             <Link href="github.com">
