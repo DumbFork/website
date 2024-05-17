@@ -7,12 +7,12 @@ import Link from 'next/link';
 
 const HeroSection = () => {
   return (
-    <section>
+    <section className='lg:py-16 '>
       <div className="grid grid-cols-1 sm:grid-cols-12">
-        <div className="col-span-7 place-self-center text-center sm:text-left"> 
-        <h1 className="text-white mb-8 text-4xl sm:text-5xl  lg:text-6xl font-extrabold">
+        <div className="col-span-7 place-self-center text-center sm:text-left justify-self-start"> 
+        <h1 className="text-white mb-8 text-4xl sm:text-5xl  lg:text-7xl lg:leading-normal font-extrabold">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#9932cc] to-[#48d1cc]">
-             Hello, I am {""}</span>
+             Hello, I'm {""}</span>
              <br></br>
         
           <TypeAnimation
@@ -59,6 +59,7 @@ const HeroSection = () => {
         <div className="rounded-full bg-[#001919] bg-opacity-80 w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative ">
           <Image
            src="/images/hero-image.png"
+           priority={false}
            alt="hero-image"
            className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full'
            width={500}
