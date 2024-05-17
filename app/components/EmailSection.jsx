@@ -41,7 +41,10 @@ const EmailSection = () => {
 
 
   return (
-    <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative' id='contact'>
+    <section
+      id="contact"
+      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+    >
       <div className="z-10">
         <h5 className='text-xl font-bold text-white my-2'>Let's Connect</h5>
         <p className='text-[#ADB7BE] mb-4 max-w-md'>
@@ -59,11 +62,18 @@ const EmailSection = () => {
         </div>
         </div>
         <div>
-            <form className='flex flex-col'>
-              <div className='mb-6'>
-                <label
-                 htmlFor="email" className='text-white block mb-2 text-sm font-medium'>
-                  Your email
+        {emailSubmitted ? (
+          <p className="text-green-500 text-sm mt-2">
+            Email sent successfully!
+          </p>
+        ) : (
+          <form className="flex flex-col" onSubmit={handleSubmit}>
+            <div className="mb-6">
+              <label
+                htmlFor="email"
+                className="text-white block mb-2 text-sm font-medium"
+              >
+                Your email
                   </label>
                 <input 
                 name='email'
@@ -108,6 +118,7 @@ const EmailSection = () => {
                   Send Message
                 </button>
             </form>
+        )}
         </div>
     </section>
   )
