@@ -2,14 +2,19 @@
 import React from 'react';
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
-import Link from 'next/link';
+import Link from 'next/link'; 
+import { motion } from 'framer-motion';
 
 
 const HeroSection = () => {
   return (
     <section className='lg:py-16 '>
       <div className="grid grid-cols-1 sm:grid-cols-12">
-        <div className="col-span-7 place-self-center text-center sm:text-left justify-self-start"> 
+        <motion.div 
+        initial={{opacity: 0, scale:0.5 }} 
+        animate={{opacity: 1,scale:1}} 
+        transition={{duration: 0.5}}
+        className="col-span-7 place-self-center text-center sm:text-left justify-self-start"> 
         <h1 className="text-white mb-8 text-4xl sm:text-5xl  lg:text-7xl lg:leading-normal font-extrabold">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#9932cc] to-[#48d1cc]">
              Hello, I'm {""}</span>
@@ -54,8 +59,11 @@ const HeroSection = () => {
             </Link>
 
         </div>
-        </div>
-        <div className="col-span-5 place-self-center mt-4 lg:mt-0">
+        </motion.div>
+        <motion.div 
+        initial={{opacity: 0, scale:0.5 }} 
+        animate={{opacity: 1,scale:1}} 
+        transition={{duration: 0.5}}v className="col-span-5 place-self-center mt-4 lg:mt-0">
         <div className="rounded-full bg-[#001919] bg-opacity-80 w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative ">
           <Image
            src="/images/hero-image.png"
@@ -67,7 +75,7 @@ const HeroSection = () => {
            
           />
         </div>
-      </div>
+      </motion.div>
       </div>
   </section>
   );
