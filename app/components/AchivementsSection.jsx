@@ -16,9 +16,10 @@ const achievementsList = [
     postfix: "%",
   },
   {
-    prefix: "%",
+    
     metric: "Experience",
     value: "80",
+postfix: "%",
   },
   {
     metric: "Certificates",
