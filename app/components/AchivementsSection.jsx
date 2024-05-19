@@ -22,10 +22,6 @@ const achievementsList = [
 postfix: "%",
   },
   {
-    metric: "Certificates",
-    value: "2",
-  },
-  {
     metric: "Years",
     value: "3",
     prefix: "+",
