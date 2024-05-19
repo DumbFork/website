@@ -8,9 +8,9 @@ export async function POST(req, res) {
   const { email, subject, message } = await req.json();
   console.log(email, subject, message);
   try {
-    const data = await resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from: fromEmail,
-      to: [fromEmail, email],
+      to: [email],
       subject: subject,
       react: (
         <>
@@ -21,8 +21,11 @@ export async function POST(req, res) {
         </>
       ),
     });
+    if (error) {
+      return  NextResponse.json({ error }, { status: 500 });
+    }
     return NextResponse.json(data);
   } catch (error) {
-    return NextResponse.json({ error });
+    return NextResponse.json({ error }, { status: 500 });
   }
 }
